@@ -1,0 +1,138 @@
+.sidebar {
+    max-width: 240px;
+    min-height: 100vh;
+    flex: 1 0 auto;
+    position: relative;
+    background: linear-gradient(180deg, #27B983 -18.15%, #91E857 266.75%);
+    
+
+    &__header {
+        padding: 21px 58px; 
+        background-color: #44C48D;
+    }
+
+    &__title {
+        width: 124px;
+
+        svg {
+            width: 124px;
+            height: 25px;
+        }
+    }
+
+    &__main {
+        padding: 38px 27px;
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 33px;
+    }
+
+    &__avatar {
+        margin-right: 10px;
+    }
+
+    &__fullname {
+        display: block;
+        color: $color-white;
+    }
+
+    &__followers {
+        font-size: 12px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.3);
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__link {
+        display: flex;
+        padding: 15px 13px;
+        color: $color-white;
+        text-decoration: none;
+
+        span {
+            align-self: center;
+        }
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.0472713);
+            border-radius: 5px;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 16px;
+        }
+    }
+
+    &__footer {
+        padding: 20px 40px 30px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.07);
+    }
+}
+
+.footer {
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 14px;
+
+        a:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+
+    &__link {
+        font-size: 12px;
+        color: $color-green;
+        text-decoration: none;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .sidebar {
+        max-width: 100%;
+        min-height: 100%;
+        display: block;
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__footer {
+            position: static;
+            display: flex;
+        }
+    }
+
+    .footer {
+
+        &__top {
+            margin-right: 24px;
+        }
+
+        &__bottom {
+
+            a:not(:last-child) {
+                margin-right: 24px;
+            }
+        }
+    }
+}

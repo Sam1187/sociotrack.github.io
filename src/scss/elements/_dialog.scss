@@ -1,0 +1,99 @@
+.Dialog {
+
+    &__overlay {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        transition: all 0.5s ease-out;
+    }
+
+    &__content {
+        padding: 20px 23px 37px 26px;
+        position: fixed;
+        z-index: 13;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        text-align: center;
+        width: 70%;
+        max-width: 600px;
+        color: $color-grey-dark;
+        transition: all 0.5s ease-out;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        text-align: left;
+        margin-bottom: 19px;
+    }
+
+    &__form {
+        margin-bottom: 20px;
+        text-align: left;
+
+        span {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        input {
+            width: 100%;
+            padding: 9px 22px 12px 16px;
+            border: 1px solid #C5CFC9;
+            border-radius: 6px;
+
+            &::placeholder {
+                font-size: 14px;
+                color: #B6B6B6;
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+}
+
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: block;
+
+    i {
+        font-size: 19px;
+    }
+}
+
+.btn-ok {
+    padding: 11px 37px;
+    background: linear-gradient(180deg, #53CD72 0%, #1CAF5E 100%);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-white;
+}
+
+.btn:active {
+    background-color: rgba(0, 0, 0, 0.05);
+}

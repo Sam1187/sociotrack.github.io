@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px 0;
+
+    &__icons {
+        display: flex;
+        position: relative;
+    }
+
+    &__icon {
+        margin-right: 22px;
+
+        a {
+            color: $color-dark;
+        }
+
+        i {
+            font-size: 20px;
+        }
+
+        &--green {
+
+            &::after {
+                content: '2';
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: -7px;
+                left: 8px;
+                width: 17px;
+                height: 17px;
+                font-size: 10px;
+                color: $color-white;
+                background-color: #1DCE6C;
+                border-radius: 50%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .header {
+        max-width: 768px;
+    }
+}

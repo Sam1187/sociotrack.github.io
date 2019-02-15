@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: $font-main;
+    color: $color-dark;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.primary {
+    min-width: 1200px;
+}
+
+.button {
+    display: block;
+    padding: 11px 16px;
+    color: $color-green-light;
+    border: 1px solid $color-green-light;
+    border-radius: 4px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $color-green-light;
+        color: $color-white;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .wrapper {
+        display: block;
+    }
+
+    .primary {
+        min-width: 768px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .wrapper {
+        display: block;
+        width: 100%;
+    }
+
+    .primary {
+        min-width: 100%;
+    }
+
+    .button {
+        padding: 8px 7px;
+    }
+
+    .content {
+
+        &__login {
+            font-size: 16px;
+        }
+        
+    }
+}
