@@ -20,23 +20,19 @@
         }
 
         &--green {
-
-            &::after {
-                content: '2';
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                top: -7px;
-                left: 8px;
-                width: 17px;
-                height: 17px;
-                font-size: 10px;
-                color: $color-white;
-                background-color: #1DCE6C;
-                border-radius: 50%;
-                text-align: center;
-            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: -7px;
+            left: 8px;
+            width: 17px;
+            height: 17px;
+            font-size: 10px;
+            color: $color-white;
+            background-color: #1DCE6C;
+            border-radius: 50%;
+            text-align: center;
         }
     }
 }

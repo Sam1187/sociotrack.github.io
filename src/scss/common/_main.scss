@@ -19,10 +19,6 @@ svg {
     display: flex;
 }
 
-.primary {
-    min-width: 1200px;
-}
-
 .button {
     display: block;
     padding: 11px 16px;
@@ -37,13 +33,19 @@ svg {
     }
 }
 
+@media all and (max-width: 978px) {
+    .button {
+        font-size: 10px;
+    }
+}
+
 @media all and (max-width: 768px) {
     .wrapper {
         display: block;
     }
 
     .primary {
-        min-width: 768px;
+        width: 100%;
     }
 }
 
