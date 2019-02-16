@@ -162,11 +162,6 @@
     }
 }
 
-@media all and (max-width:1200px) {
-    // .primary {
-    //     max-width: 1200px;
-    // }
-}
 
 @media all and (max-width: 978px) {
 
@@ -189,6 +184,10 @@
 }
 
 @media all and (max-width: 576px) {
+    .content {
+        height: 100%;
+    }
+
     .main {
 
         &__social {

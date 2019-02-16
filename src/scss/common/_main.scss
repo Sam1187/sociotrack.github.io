@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: $color-grey;
     font-family: 'Roboto', sans-serif;
     font-size: $font-main;
     color: $color-dark;
@@ -31,6 +32,10 @@ svg {
         background-color: $color-green-light;
         color: $color-white;
     }
+}
+
+.hidden {
+    display: none;
 }
 
 @media all and (max-width: 978px) {
