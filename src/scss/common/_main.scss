@@ -20,6 +20,10 @@ svg {
     display: flex;
 }
 
+.primary {
+    width: 100vw;
+}
+
 .button {
     display: block;
     padding: 11px 16px;
@@ -27,6 +31,7 @@ svg {
     border: 1px solid $color-green-light;
     border-radius: 4px;
     text-decoration: none;
+    transition: all .3s ease-in-out;
 
     &:hover {
         background-color: $color-green-light;

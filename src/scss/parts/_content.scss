@@ -1,6 +1,5 @@
 .content {
     padding: 68px 125px;
-    height: 100vh;
     background-color: $color-grey;
 
     &__header {
@@ -48,8 +47,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-right: -50px;
 
     &__item {
+        margin-right: 50px;
         margin-bottom: -12px;
     }
 
@@ -163,19 +164,46 @@
 }
 
 
-@media all and (max-width: 978px) {
+@media all and (max-width: 1440px) {
 
     .content {
-        padding: 68px 40px;
+        width: 950px;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 1190px) {
+
+    .content {
+        width: 700px;
+    }
+}
+
+@media all and (max-width: 940px) {
+
+    .content {
+        width: 450px;
+        padding: 68px 20px;
+    }
+
+    .main {
+        margin-right: -10px;
+
+        &__item {
+            margin-right: 10px;
+        }
     }
 }
 
 @media all and (max-width: 768px) {
-    .main {
 
-        &__social {
-            min-width: 200px;
-        }
+    .content {
+        width: 100%;
+        padding: 68px 120px;
+    }
+
+    .main {
+        margin-right: -30px;
 
         &__item {
             margin-right: 30px;
@@ -183,12 +211,14 @@
     }
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 670px) {
     .content {
         height: 100%;
+        padding: 50px;
     }
 
     .main {
+        margin-right: -30px;
 
         &__social {
             min-width: 300px;
@@ -201,6 +231,52 @@
             }
             
         }
+
+        &__item {
+            margin-right: 30px;
+        }
     }
 
 }
+
+// @media all and (max-width: 992px) {
+
+//     .content {
+//         padding: 68px 100px;
+//     }
+// }
+
+// @media all and (max-width: 768px) {
+//     .main {
+
+//         &__social {
+//             min-width: 200px;
+//         }
+
+//         &__item {
+//             margin-right: 30px;
+//         }
+//     }
+// }
+
+// @media all and (max-width: 576px) {
+//     .content {
+//         height: 100%;
+//     }
+
+//     .main {
+
+//         &__social {
+//             min-width: 300px;
+//         }
+
+//         &__login {
+
+//             span {
+//                 font-size: 18px;
+//             }
+            
+//         }
+//     }
+
+// }
