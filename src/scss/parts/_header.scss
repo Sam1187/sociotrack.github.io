@@ -12,6 +12,10 @@
     &__icon {
         margin-right: 22px;
 
+        &:hover {
+            cursor: pointer;
+        }
+
         a {
             color: $color-dark;
         }
